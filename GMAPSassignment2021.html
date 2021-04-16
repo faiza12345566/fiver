@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+  <script src="hello.js"></script>
+ <script>
+window.onload = function() {
+   myFunction(200, 125, 80, 0);             //this is main fucntion which will start when we run file without clicking
+}
+
+</script> 
+
+<button type="button" onclick=" myFunctionn();">button1</button>
+
+<button type="button" onclick="secFunctionn()">button2</button>
+
+<button type="button" onclick="lastone()">button3</button>
+
+
+<button type="button" onclick="fourth()">button4</button>
+
+<button type="button" onclick="fifth()">button5</button>
+<button type="button" onclick="sixth()">button6</button>
+
+
+
+<div id="buttong">                                               <!this div is for button 6 which give vaious option >                   
+  <h3>My Google Maps Demo</h3>                                    
+	
+	<label for="cars">Source:</label>
+  <select name="cars" id="cars">
+    <option value="Telfer">Telfer</option>
+    <option value="Marble Bar">Marble Bar</option>
+    <option value="Newman">Newman</option>
+  
+  </select>
+  <br><br>
+  	<label for="cars">Way point:</label>
+  <select name="cars" id="cars1">
+  
+  </select>
+  <br><br>
+  	<label for="cars">Destination:</label>
+  <select name="cars" id="cars2">
+    <option value="Olympic dam">Olympic dam</option>
+    <option value="Anna creek">Anna creek</option>
+    <option value="Durham">Durham</option>
+    
+  </select>
+  <br><br>
+  <input type="submit" onclick="initMap()" value="Find">                      
+</div>
+
+
+
+
+<h2>Geographical map</h2>
+ <div id="map"></div>
+ 
+ 
+ 
+ 
+ 
+ <script>
+  var y = document.getElementById("map");                              
+ 
+     var x = document.getElementById("buttong");    
+   x.style.display = "none";   
+    y.style.display = "none";                                       // this code will hide map space untill we click on button 6
+  
+
+		
+		
+      
+
+  
+  
+</script>
+ 
+ 
+ 
+ 
+ 
+  <style type="text/css">
+    /* Set the size of the div element that contains the map */
+      #map {
+	
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+	  
+	  #map1 {
+  background-image: url("http://crazistanlatest.com/wp-content/uploads/2021/04/Capture.png");
+
+background-repeat: no-repeat;
+ 
+}
+	  
+	  #myCanvas{
+	   background-color: transparent;
+
+ }
+    </style>
+ 
+ 
+ 
+ 
+ 
+ 
+ <div id ="map1">
+
+<canvas id="myCanvas" width="1200" height="500" onclick="fstart()" onmouseenter="myEnterFunction()" >   
+Your browser does not support the HTML5 canvas tag.</canvas> 
+
+
+<div>
+
+<p id="demo"></p>
+
+</body>
+  <script src="hello.js"></script>
+   <script 
+
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEBi1FnJiek22C6ND8sekqSObt-5PuDRE&callback=initMap&libraries=&v=weekly"
+      async
+
+  >               // this is api key which allow you to use map for development purpose</script>
+</html>
